@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html-page-style.css">
+    <title>Тренинг по веб-разработке для начинающих</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-button-html">
+                <a href="index.html" class="button-html_text">HTML</a>
+            </div>
+            <div class="header-button-css">
+                <a href="css-page.html" class="button-css_text">CSS</a>
+            </div>
+            <div class="header-button-js">
+                <a href="js-page.html" class="button-js_text">JavaScript</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <aside class="navigation-menu">
+                <ul class="list-link">
+                    <li class="link-title"><a href="index.html">Введение</a></li>
+                    <li class="link-title" style="background-color: #c05635;"><a href="hmtl-basic-text.html">Разметка текста</a></li>
+                    <li class="link-theme"><a href="#Заголовки">Заголовки</a></li>
+                    <li class="link-theme"><a href="#Абзацы">Абзацы</a></li>
+                    <li class="link-theme"><a href="#Списки">Списки</a></li>
+                    <li class="link-title"><a href="hmtl-basic-links.html">Ссылки</a></li>
+                    <li class="link-title"><a href="html-basic-conclusion.html">Заключение</a></li>
+                </ul>
+            </aside>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h1>Разметка текста в HTML</h1>
+                </div>
+
+                <div class="main-content-title" id="Заголовки">
+                    <h2>Заголовки</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>Элементы заголовка позволяют вам указывать определённые части вашего контента в качестве заголовков или подзаголовков. Точно так же, как книга имеет название, названия глав и подзаголовков, HTML документ может содержать то же самое. HTML включает шесть уровней заголовков h1 (en-US)–h6 (en-US), хотя обычно вы будете использовать не более 3-4 :</p>
+                    <img src="content/h1-h4.png" alt="">
+                    <p>Теперь попробуйте добавить подходящее название для вашей HTML страницы, чуть выше  элемента img.</p>
+                </div>
+
+                <div class="main-content-title" id="Абзацы">
+                    <h2>Абзацы</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>Как было сказано раньше, элемент p предназначен для абзацев текста; вы будете использовать их регулярно при разметке текстового контента:</p>
+                    <img src="content/p.png" alt="">
+                    <p>Добавьте свой образец текста (вы создавали его в статье Каким должен быть ваш веб-сайт?) в один или несколько абзацев, расположенных прямо под элементом img.</p>
+                </div>
+
+                <div class="main-content-title" id="Списки">
+                    <h2>Списки</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>Большая часть веб-контента является списками и HTML имеет специальные элементы для них. Разметка списка всегда состоит по меньшей мере из двух элементов. Наиболее распространёнными типами списков являются нумерованные и ненумерованные списки:                    </p>
+                    <pre>
+    1. <strong>Ненумерованные списки</strong> - это списки, где порядок пунктов не имеет значения, как в списке покупок. Они оборачиваются в элемент ul.
+
+    2. <strong>Нумерованные списки</strong> - это списки, где порядок пунктов имеет значение, как в рецепте. Они оборачиваются в элемент ol.
+
+Каждый пункт внутри списков располагается внутри элемента li (list item, элемент списка).
+Например, если мы хотим включить часть следующего фрагмента абзаца в список:
+
+<img src="content/p1.png" alt="">
+                    </pre>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

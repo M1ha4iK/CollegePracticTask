@@ -1,0 +1,238 @@
+@font-face {
+    font-family: "font1"; 
+    src: url("../fonts/20011.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "font2"; 
+    src: url("../fonts/20136.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "font3"; 
+    src: url("../fonts/20138.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "font4"; 
+    src: url("../fonts/20421.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "font5"; 
+    src: url("../fonts/17923.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "font6"; 
+    src: url("../fonts/17891.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "font7"; 
+    src: url("../fonts/17734.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "font8"; 
+    src: url("../fonts/15352.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+@font-face {
+    font-family: "roboto"; 
+    src: url("../fonts/Robotoblack.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+@font-face {
+    font-family: "tesla"; 
+    src: url("../fonts/TESLA.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+*{
+    transition: all 0.2s ease; 
+}
+
+body{
+    margin: 0px 200px 0px 200px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0px;
+}
+
+h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+pre {
+    display: block;
+    font-family: none;
+    white-space: pre;
+    margin: 0em 0px;
+}
+
+img {
+    width: 800px;
+}
+
+.header {
+    height: 40px;
+    background-color: rgb(247, 235, 230);
+    border: solid 1px rgb(214, 214, 214);
+}
+.header-container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header-button-html {
+    margin: 0px 40px 0px 40px;
+}
+.header-button-html a:hover {
+    color: white;
+    transition: all 0.2s ease; 
+}
+.button-html_text {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(126, 126, 126);
+    text-decoration: none;
+}
+.header-button-css {
+    margin: 0px 40px 0px 0px;
+}
+.header-button-css a:hover {
+    color: white;
+    transition: all 0.2s ease; 
+}
+.button-css_text {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.header-button-js {
+    margin: 0px 40px 0px 0px;
+}
+.header-button-js a:hover {
+    color: white;
+    transition: all 0.2s ease; 
+}
+.button-js_text {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+
+.main {
+   
+}
+.main-container {
+    display: flex;
+}
+
+
+.navigation-menu {
+    border-right: solid 1px rgb(214, 214, 214);
+}
+
+
+.list-link {
+    width: 260px;
+    padding: 0px 17px 15px 17px;
+    list-style-type: none;
+}
+
+
+.link-title{
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 0px 5px;
+    border: 1px solid #f08361;
+    border-radius: 3px;
+    height: 25px;
+    margin: 15px 0px 0px 0px;
+    background-color:#f08361;
+}
+.link-title a{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    text-decoration: none;
+}
+
+.link-title:hover{
+    background-color: #f09276;
+    transition: all 0.2s ease; 
+}
+
+.link-theme {
+    margin: 5px 0px 5px 15px;
+}
+.link-theme a{
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    text-decoration: none;
+}
+.link-theme a:hover {
+    color: black;
+    font-weight: bold;
+    transition: all 0.2s ease; 
+}
+
+.main-content {
+    width: 1125px;
+    margin: 9px 35px 9px 35px;
+}
+.main-content-title {
+    margin: 25px 0px 10px 0px;
+}
+.main-content-text {
+    
+}
+.main-content-text p{
+    margin: 20px 0px 10px 0px;
+}
