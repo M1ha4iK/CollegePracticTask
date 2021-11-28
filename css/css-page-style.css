@@ -59,6 +59,9 @@
     font-weight: normal; 
 }
 
+*{
+    transition: all 0.2s ease; 
+}
 
 body{
     margin: 0px 200px 0px 200px;
@@ -122,9 +125,14 @@ img {
     height: 100%;
     display: flex;
     align-items: center;
+    font-family: "roboto";
 }
 .header-button-html {
     margin: 0px 40px 0px 40px;
+}
+.header-button-html a:hover {
+    color: white;
+    transition: all 0.2s ease; 
 }
 .button-html_text {
     font-size: 18px;
@@ -135,6 +143,10 @@ img {
 .header-button-css {
     margin: 0px 40px 0px 0px;
 }
+.header-button-css a:hover {
+    color: white;
+    transition: all 0.2s ease; 
+}
 .button-css_text {
     font-size: 18px;
     font-weight: bold;
@@ -143,6 +155,10 @@ img {
 }
 .header-button-js {
     margin: 0px 40px 0px 0px;
+}
+.header-button-js a:hover {
+    color: white;
+    transition: all 0.2s ease; 
 }
 .button-js_text {
     font-size: 18px;
@@ -166,9 +182,10 @@ img {
 
 
 .list-link {
-    width: 250px;
+    width: 260px;
     padding: 0px 17px 15px 17px;
     list-style-type: none;
+    font-family: "roboto";
 }
 
 
@@ -178,7 +195,7 @@ img {
     padding: 0px 0px 0px 5px;
     border: 1px solid #f08361;
     border-radius: 3px;
-    height: 25px;
+    height: 26px;
     margin: 15px 0px 0px 0px;
     background-color:#f08361;
 }
@@ -189,20 +206,29 @@ img {
     text-decoration: none;
 }
 
+.link-title:hover{
+    background-color: #f09276;
+    transition: all 0.2s ease; 
+}
 
 .link-theme {
-    margin: 5px 0px 5px 15px;
+    margin: 10px 0px 10px 15px;
 }
 .link-theme a{
     font-size: 16px;
     color: rgb(85, 85, 85);
     text-decoration: none;
 }
-
+.link-theme a:hover {
+    color: black;
+    font-weight: bold;
+    transition: all 0.2s ease; 
+}
 
 .main-content {
     width: 1125px;
     margin: 9px 35px 9px 35px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .main-content-title {
     margin: 25px 0px 10px 0px;
