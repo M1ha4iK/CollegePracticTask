@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/js-page-style.css">
+    <title>Тренинг по веб-разработке для начинающих</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-button-html">
+                <a href="index.html" class="button-html_text">HTML</a>
+            </div>
+            <div class="header-button-css">
+                <a href="css-page.html" class="button-css_text">CSS</a>
+            </div>
+            <div class="header-button-js">
+                <a href="js-page.html" class="button-js_text">JavaScript</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <aside class="navigation-menu">
+                <ul class="list-link">
+                    <li class="link-title"><a href="js-page.html">Привет, мир!</a></li>
+                    <li class="link-title" style="background-color: #c05635;"><a href="js-page-variables.html">Переменные</a></li>
+                    <li class="link-theme"><a href="#Переменная">Переменная</a></li>
+                    <li class="link-theme"><a href="#Аналогия из жизни">Аналогия из жизни</a></li>
+                    <li class="link-theme"><a href="#Имена переменных">Имена переменных</a></li>
+                    <li class="link-theme"><a href="#Итого">Итого</a></li>
+                    <li class="link-title"><a href="js-page-types.html">Типы данных</a></li>
+                    <li class="link-title"><a href="test-js.html">Тест</a></li>
+                </ul>
+            </aside>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h1>Переменные</h1>
+                </div>
+
+                <div class="main-content-title" id="Переменная">
+                    <h2>Переменная</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>Переменная – это «именованное хранилище» для данных. Мы можем использовать переменные для хранения товаров, посетителей и других данных.</p>
+                    <p>Для создания переменной в JavaScript используйте ключевое слово let.</p>
+                    <p>Приведённая ниже инструкция создаёт (другими словами: объявляет или определяет) переменную с именем «message»:</p>
+                    <img src="content/letMessage.png" alt="">
+                    <p>Теперь можно поместить в неё данные, используя оператор присваивания =:</p>
+                    <img src="content/letMessageHello.png" alt="">
+                    <p>Строка сохраняется в области памяти, связанной с переменной. Мы можем получить к ней доступ, используя имя переменной:</p>
+                    <img src="content/alertmessage.png" alt="">
+                    <p>Мы также можем объявить несколько переменных в одной строке:</p>
+                    <img src="content/moreVariables.png" alt="">
+                </div>
+
+                <div class="main-content-title" id="Аналогия из жизни">
+                    <h2>Аналогия из жизни</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>Мы легко поймём концепцию «переменной», если представим её в виде «коробки» для данных с уникальным названием на ней.</p>
+                    <p>Например, переменную message можно представить как коробку с названием "message" и значением "Hello!" внутри:</p>
+                    <img src="content/boxvariables.png" alt="" class="boximg">
+                    <p>Мы можем положить любое значение в коробку. Мы также можем изменить его столько раз, сколько захотим:</p>
+                    <img src="content/changeVariable.png" alt="">
+                    <p>При изменении значения старые данные удаляются из переменной:</p>
+                    <img src="content/boxVariableDelete.png" alt="" class="boximg1">
+                </div>
+
+                <div class="main-content-title" id="Имена переменных">
+                    <h2>Имена переменных</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>В JavaScript есть два ограничения, касающиеся имён переменных:</p>
+                    <p>1. Имя переменной должно содержать только буквы, цифры или символы $ и _.</p>
+                    <p>2. Первый символ не должен быть цифрой.</p>
+                    <p>Примеры допустимых имён:</p>
+                    <img src="content/correctName.png" alt="">
+                    <p>Если имя содержит несколько слов, обычно используется верблюжья нотация, то есть, слова следуют одно за другим, где каждое следующее слово начинается с заглавной буквы: myVeryLongName.</p>
+                    <p>Самое интересное – знак доллара '$' и подчёркивание '_' также можно использовать в названиях. Это обычные символы, как и буквы, без какого-либо особого значения.</p>
+                    <p>Эти имена являются допустимыми:</p>
+                    <img src="content/correctName2.png" alt="">
+                    <p>Примеры неправильных имён переменных:</p>
+                    <img src="content/NoCorrectName.png" alt="">
+                </div>
+
+                <div class="main-content-title" id="Итого">
+                    <h2>Итого</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>Мы можем объявить переменные для хранения данных с помощью ключевых слов var, let или const.</p>
+                    <p><strong>let</strong> – это современный способ объявления.</p>
+                    <p><strong>var</strong> – это устаревший способ объявления. Обычно мы вообще не используем его, но мы рассмотрим тонкие отличия от let в главе Устаревшее ключевое слово "var" на случай, если это всё-таки вам понадобится.</p>
+                    <p><strong>const</strong> – похоже на let, но значение переменной не может изменяться.</p>
+                    <p>Переменные должны быть названы таким образом, чтобы мы могли легко понять, что у них внутри.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

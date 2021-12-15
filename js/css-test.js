@@ -301,6 +301,7 @@ const renderIndicator = (currentStep) => {
 quiz.addEventListener('change', (event) => {
     if(event.target.classList.contains('answer-input')){
         storageResults[event.target.name] = event.target.value;
+        btnNext.style.backgroundColor = "#4CAF50";
         btnNext.disabled = false;
     }
 });
@@ -322,7 +323,7 @@ quiz.addEventListener('click', (event) => {
         else{
             renderQuestions(nextQuestionIndex);  
         }
-
+        btnNext.style.backgroundColor = "grey";
         btnNext.disabled = true;
     }
     if(event.target.classList.contains('btn-restart')){

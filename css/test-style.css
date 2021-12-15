@@ -1,10 +1,73 @@
+@font-face {
+   font-family: "font1"; 
+   src: url("../fonts/20011.ttf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+} 
+@font-face {
+   font-family: "font2"; 
+   src: url("../fonts/20136.ttf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+} 
+@font-face {
+   font-family: "font3"; 
+   src: url("../fonts/20138.ttf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+} 
+@font-face {
+   font-family: "font4"; 
+   src: url("../fonts/20421.ttf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+} 
+@font-face {
+   font-family: "font5"; 
+   src: url("../fonts/17923.ttf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+} 
+@font-face {
+   font-family: "font6"; 
+   src: url("../fonts/17891.otf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+} 
+@font-face {
+   font-family: "font7"; 
+   src: url("../fonts/17734.otf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+} 
+@font-face {
+   font-family: "font8"; 
+   src: url("../fonts/15352.ttf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+} 
+@font-face {
+   font-family: "roboto"; 
+   src: url("../fonts/Robotoblack.ttf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+}
+@font-face {
+   font-family: "tesla"; 
+   src: url("../fonts/TESLA.ttf") format("truetype"); 
+   font-style: normal; 
+   font-weight: normal; 
+}
+
+
 body{
+   background-color: rgb(241, 240, 240);
    margin: 0;
 }
 
 .quiz {
-   margin: 0 auto;
-   width: 600px;
+   margin: 50px auto;
+   width: 700px;
 }
 
 ul{
@@ -23,12 +86,17 @@ ul{
 
 }
 .quiz-questions-item_question {
+   font-size: 22px;
+   font-family: "font1";
    margin: 20px 0px 20px 0px;
 }
 .quiz-questions-item_answers {
+   width: 700px;
+   font-size: 18px;
    margin: 0px 0px 20px 0px;
 }
 .quiz-indicator {
+   font-family: "font1";
    margin: 0px 0px 20px 0px;
 }
 
@@ -56,11 +124,30 @@ ul{
 }
 
 .btn-next {
+   cursor: pointer;
+   background-color: grey; 
+   border: none;
+   color: white;
+   padding: 5px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+}
 
-}
 .btn-restart {
-   display: none;
+   cursor: pointer;
+   background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
+
+
 
 
 

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/js-page-style.css">
+    <title>Тренинг по веб-разработке для начинающих</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <div class="header-button-html">
+                <a href="index.html" class="button-html_text">HTML</a>
+            </div>
+            <div class="header-button-css">
+                <a href="css-page.html" class="button-css_text">CSS</a>
+            </div>
+            <div class="header-button-js">
+                <a href="js-page.html" class="button-js_text">JavaScript</a>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="main-container">
+            <aside class="navigation-menu">
+                <ul class="list-link">
+                    <li class="link-title"><a href="js-page.html">Привет, мир!</a></li>
+                    <li class="link-title"><a href="js-page-variables.html">Переменные</a></li>
+                    <li class="link-title" style="background-color: #c05635;"><a href="js-page-types.html">Типы данных</a></li>
+                    <li class="link-theme"><a href="#Число">Число</a></li>
+                    <li class="link-theme"><a href="#BigInt">BigInt</a></li>
+                    <li class="link-theme"><a href="#Строка">Строка</a></li>
+                    <li class="link-theme"><a href="#Булевый тип">Булевый тип</a></li>
+                    <li class="link-theme"><a href="#Значение «null»">Значение «null»</a></li>
+                    <li class="link-theme"><a href="#Значение «undefined»">Значение «undefined»</a></li>
+                    <li class="link-theme"><a href="#Объекты и символы">Объекты и символы</a></li>
+                    <li class="link-theme"><a href="#Итого">Итого</a></li>
+                    <li class="link-title"><a href="test-js.html">Тест</a></li>
+                </ul>
+            </aside>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h1>Типы данных</h1>
+                </div>
+
+                <div class="main-content-title" id="Число">
+                    <h2>Число</h2>
+                </div>
+                <div class="main-content-text">
+                    <img src="content/typenum.png" alt="">
+                    <p>Числовой тип данных (number) представляет как целочисленные значения, так и числа с плавающей точкой.</p>
+                    <p>Существует множество операций для чисел, например, умножение *, деление /, сложение +, вычитание - и так далее.</p>
+                    <p>Кроме обычных чисел, существуют так называемые «специальные числовые значения», которые относятся к этому типу данных: Infinity, -Infinity и NaN.</p>
+                    <p>Infinity представляет собой математическую бесконечность ∞. Это особое значение, которое больше любого числа. Мы можем получить его в результате деления на ноль:</p>
+                    <img src="content/infinity.png" alt="">
+                    <p>NaN означает вычислительную ошибку. Это результат неправильной или неопределённой математической операции, например:</p>
+                    <img src="content/Nan.png" alt="">
+                </div>
+
+                <div class="main-content-title" id="BigInt">
+                    <h2>BigInt</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>В JavaScript тип «number» не может содержать числа больше, чем (253-1) (т. е. 9007199254740991), или меньше, чем -(253-1) для отрицательных чисел. Это техническое ограничение вызвано их внутренним представлением.</p>
+                    <p>Для большинства случаев этого достаточно. Но иногда нам нужны действительно гигантские числа, например, в криптографии или при использовании метки времени («timestamp») с микросекундами.</p>
+                    <p>Тип BigInt был добавлен в JavaScript, чтобы дать возможность работать с целыми числами произвольной длины.</p>
+                    <p>Чтобы создать значение типа BigInt, необходимо добавить n в конец числового литерала:</p>
+                    <img src="content/BigInt.png" alt="">
+                </div>
+
+                <div class="main-content-title" id="Строка">
+                    <h2>Строка</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>Строка (string) в JavaScript должна быть заключена в кавычки.</p>
+                    <img src="content/string.png" alt="">
+                    <p>В JavaScript существует три типа кавычек:</p>
+                    <p>1. Двойные кавычки: "Привет".</p>
+                    <p>2. Одинарные кавычки: 'Привет'.</p>
+                    <p>3. Обратные кавычки: `Привет`.</p>
+                    <p>Двойные или одинарные кавычки являются «простыми», между ними нет разницы в JavaScript.</p>
+                    <p>Обратные же кавычки имеют расширенную функциональность. Они позволяют нам встраивать выражения в строку, заключая их в ${…}. Например:</p>
+                    <img src="content/interpolation.png" alt="">
+                    <p>Выражение внутри ${…} вычисляется, и его результат становится частью строки. Мы можем положить туда всё, что угодно: переменную name, или выражение 1 + 2, или что-то более сложное.</p>
+                </div>
+
+                <div class="main-content-title" id="Булевый тип">
+                    <h2>Булевый тип</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>Булевый тип (boolean) может принимать только два значения: true (истина) и false (ложь).</p>
+                    <p>Такой тип, как правило, используется для хранения значений да/нет: true значит «да, правильно», а false значит «нет, не правильно».</p>
+                    <p>Например:</p>
+                    <img src="content/boolean.png" alt="">
+                    <p>Булевые значения также могут быть результатом сравнений:</p>
+                    <img src="content/boolean2.png" alt="">
+                </div>
+
+                <div class="main-content-title" id="Значение «null»">
+                    <h2>Значение «null»</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>Специальное значение null не относится ни к одному из типов, описанных выше.</p>
+                    <p>Оно формирует отдельный тип, который содержит только значение null:</p>
+                    <img src="content/null.png" alt="">
+                    <p>В JavaScript null не является «ссылкой на несуществующий объект» или «нулевым указателем», как в некоторых других языках.</p>
+                    <p>Это просто специальное значение, которое представляет собой «ничего», «пусто» или «значение неизвестно».</p>
+                    <p>В приведённом выше коде указано, что значение переменной age неизвестно.</p>
+                </div>
+
+                <div class="main-content-title" id="Значение «undefined»">
+                    <h2>Значение «undefined»</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>Специальное значение undefined также стоит особняком. Оно формирует тип из самого себя так же, как и null.</p>
+                    <p>Оно означает, что «значение не было присвоено».</p>
+                    <p>Если переменная объявлена, но ей не присвоено никакого значения, то её значением будет undefined:</p>
+                    <img src="content/outsideScript.png" alt="">
+                    <p>Здесь /path/to/script.js – это абсолютный путь до скрипта от корня сайта. Также можно указать относительный путь от текущей страницы. Например, src="script.js" или src="./script.js" будет означать, что файл "script.js" находится в текущей папке.</p>
+                    <p>Можно указать и полный URL-адрес.</p>
+                    <p>Для подключения нескольких скриптов используйте несколько тегов:</p>
+                    <img src="content/aFewScripts.png" alt="">
+                </div>
+               
+                <div class="main-content-title" id="Объекты и символы">
+                    <h2>Объекты и символы</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>Тип object (объект) – особенный.</p>
+                    <p>Все остальные типы называются «примитивными», потому что их значениями могут быть только простые значения (будь то строка, или число, или что-то ещё). В объектах же хранят коллекции данных или более сложные структуры.</p>
+                    <p>Объекты занимают важное место в языке и требуют особого внимания. Мы разберёмся с ними в главе Объекты после того, как узнаем больше о примитивах.</p>
+                    <p>Тип symbol (символ) используется для создания уникальных идентификаторов в объектах. Мы упоминаем здесь о нём для полноты картины, изучим этот тип после объектов.</p>
+                </div>
+
+                <div class="main-content-title" id="Итого">
+                    <h2>Итого</h2>
+                </div>
+                <div class="main-content-text">
+                    <p>В JavaScript есть 8 основных типов:</p>
+                    <p>1. number для любых чисел: целочисленных или чисел с плавающей точкой; целочисленные значения ограничены диапазоном ±(253-1).</p>
+                    <p>2. bigint для целых чисел произвольной длины.</p>
+                    <p>3. string для строк. Строка может содержать ноль или больше символов, нет отдельного символьного типа.</p>
+                    <p>4. boolean для true/false.</p>
+                    <p>5. null для неизвестных значений – отдельный тип, имеющий одно значение null.</p>
+                    <p>6. undefined для неприсвоенных значений – отдельный тип, имеющий одно значение undefined.</p>
+                    <p>7. object для более сложных структур данных.</p>
+                    <p>8. symbol для уникальных идентификаторов.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

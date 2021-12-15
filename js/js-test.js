@@ -1,214 +1,216 @@
 const DATA = [
     {
-        questions: 'Что такое HTML?',
+        questions: 'Что такое JavaScrpit?',
         answers: [
             {
                 id: '1',
-                value: 'Высокоуровневый язык программирования.',
+                value: 'Язык описания внешнего вида документа.',
                 correct: false,
+
             },
             {
                 id: '2',
-                value: 'Ключевое слово, относящееся к части информации.',
-                correct: false,
+                value: 'Мультипарадигменный язык программирования.',
+                correct: true,
             },
             {
                 id: '3',
                 value: 'Язык разметки, который используется для структурирования и отображения веб-страницы и её контента.',
-                correct: true,
-            },
-        ]
-
-    },
-    {
-        questions: 'Возможно ли распологать элементы внутри других элементов?',
-        answers: [
-            {
-                id: '4',
-                value: 'Да',
-                correct: true,
-            },
-            {
-                id: '5',
-                value: 'Нет',
                 correct: false,
             },
         ]
 
     },
     {
-        questions: 'Как правильно?',
+        questions: 'Какие значения можно хранить в переменных?',
+        answers: [
+            {
+                id: '4',
+                value: 'Только числа и строки',
+                correct: false,
+            },
+            {
+                id: '5',
+                value: 'Строки, числа с точкой, простые числа и булевые выражения',
+                correct: true,
+                
+            },
+        ]
+
+    },
+    {
+        questions: 'Какая переменная записана неверно?',
         answers: [
             {
                 id: '6',
-                value: '&lt;p&gt;Я хочу собачку!',
+                value: 'var num = 0;',
                 correct: false,
             },
             {
                 id: '7',
-                value: '&ltp&gt;Я хочу собачку!&lt/p&gt;',
-                correct: true,
-            },
-            {
-                id: '8',
-                value: '&lt/p&gt;Я хочу собачку!&ltp/&gt;',
+                value: 'var string = "1";',
                 correct: false,
             },
             {
+                id: '8',
+                value: 'var isDone = true',
+                correct: true,
+            },
+            {
                 id: '9',
-                value: '&lt/p&gt;Я хочу собачку!&lt/p&gt;',
+                value: 'var string = "string";',
                 correct: false,
             },
         ]
 
     },
     {
-        questions: 'Атрибут всегда должен иметь:',
+        questions: 'В чем отличие между локальной и глобальной переменной?',
         answers: [
             {
                 id: '10',
-                value: 'Имя атрибута, за которым следует знак равенства.',
-                correct: true,
+                value: 'Глобальные можно переопределять, локальные нельзя',
+                correct: false,
             },
             {
                 id: '11',
-                value: 'Название атрибута обязательно должно начинаться с большой буквы.',
+                value: 'Локальные видны повсюду, глобальные только в функциях',
                 correct: false,
             },
             {
                 id: '12',
-                value: 'Термоядерный реактор.',
-                correct: false,
+                value: 'Глобальные видны повсюду, локальные только в функциях',
+                correct: true,
             },
         ]
 
     },
     {
-        questions: 'Бывают ли пустые элементы в HTML?',
+        questions: 'Какие функции выполняет JS?',
         answers: [
             {
                 id: '13',
-                value: 'Нет',
+                value: 'Создает стилевое оформление сайта',
                 correct: false,
             },
             {
                 id: '14',
-                value: 'Да',
+                value: 'Отвечает за функции на стороне клиента',
                 correct: true,
             },
         ]
 
     },
     {
-        questions: 'Какого уровня заголовков НЕ существует?',
+        questions: 'Выберите неверный ответ',
         answers: [
             {
                 id: '15',
-                value: '&lth1&gt;',
-                correct: false,
-            },
-            {
-                id: '16',
-                value: '&lth0&gt;',
+                value: 'Для добавления кода JavaScript на страницу используется include.',
                 correct: true,
             },
             {
+                id: '16',
+                value: 'Для добавления кода JavaScript на страницу используется тег <script>.',
+                correct: false,
+            },
+            {
                 id: '17',
-                value: '&lth6&gt;',
+                value: 'Скрипт во внешнем файле можно вставить с помощью <script src="path/to/script.js"></script>.',
                 correct: false,
             },
         ]
 
     },
     {
-        questions: 'Какой тег предназначен для абзацев?',
+        questions: 'Где верно указано имя переменной?',
         answers: [
             {
                 id: '18',
-                value: '&lta&gt;&lt/a&gt;',
+                value: 'var 2num;',
                 correct: false,
             },
             {
                 id: '19',
-                value: '&lts&gt;&lt/s&gt;',
+                value: 'ver num;',
                 correct: false,
             },
             {
                 id: '20',
-                value: '&ltp&gt;&lt/p&gt;',
+                value: 'var num_1;',
                 correct: true,
             },
             {
                 id: '21',
-                value: '&ltbr&gt;&lt/br&gt;',
+                value: 'var num',
                 correct: false,
             },
         ]
 
     },
     {
-        questions: 'Как добавить ссылку?',
+        questions: 'Что такое переменная?',
         answers: [
             {
                 id: '22',
-                value: '&lta href="..."&gt;Ссылка&lt/a&gt;',
-                correct: true,
-            },
-            {
-                id: '23',
-                value: '&ltlink href="..."&gt;Ссылка&lt/a&gt;',
+                value: 'Коробка в которую кладут вещи.',
                 correct: false,
             },
             {
+                id: '23',
+                value: 'Переменная – это «именованное хранилище» для данных. Мы можем использовать переменные для хранения товаров, посетителей и других данных.',
+                correct: true,
+            },
+            {
                 id: '24',
-                value: '&ltlink&gt;Ссылка&lt/link&gt;',
+                value: 'Характеристика набора данных.',
                 correct: false,
             },
         ]
 
     },
     {
-        questions: 'С помощью какого тега можно сделать текст жирным?',
+        questions: 'Сколько основных типов данных в JS?',
         answers: [
             {
                 id: '25',
-                value: '&lth1&gt;',
+                value: '3',
                 correct: false,
             },
             {
                 id: '26',
-                value: '&lti&gt;',
+                value: '7',
                 correct: false,
             },
             {
                 id: '27',
-                value: '&ltstring&gt;',
-                correct: false,
+                value: '8',
+                correct: true,
             },
             {
                 id: '28',
-                value: '&ltb&gt;',
-                correct: true,
+                value: '9',
+                correct: false,
             },
         ]
 
     },
     {
-        questions: 'Что такое семантический тег?*',
+        questions: 'Тип symbol (символ) используется для ...?',
         answers: [
             {
                 id: '29',
-                value: 'Это тег, которые предназначен для того чтобы компьютерные программы (поисковые системы, сборщики информации, речевые браузеры и т. д.), понимали какой тип информации заложен в данном теге.',
+                value: 'создания уникальных идентификаторов в объектах.',
                 correct: true,
             },
             {
                 id: '30',
-                value: 'Значение единиц языка.',
+                value: 'создания символов.',
                 correct: false,
             },
             {
                 id: '31',
-                value: 'Это что-то из другой вселенной.',
+                value: 'создания целочисленного значения.',
                 correct: false,
             },
         ]
